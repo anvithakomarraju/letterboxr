@@ -1,5 +1,7 @@
 import SwiftUI
 
+//git test
+
 struct SignInView: View {
     @State private var email: String = ""
     @State private var password: String = ""
@@ -24,7 +26,6 @@ struct SignInView: View {
                             .background(Color(red: 42/255, green: 45/255, blue: 51/255)) // Custom RGB color
                             .cornerRadius(10)
                             .frame(maxWidth: 300)
-                        
                         SecureField("", text: $password)
                             .placeholder(when: password.isEmpty, placeholder: "Password", placeholderColor: Color(red: 169/255, green: 222/255, blue: 222/255), textColor: Color(red: 169/255, green: 222/255, blue: 222/255))
                             .padding()
