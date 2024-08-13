@@ -9,24 +9,36 @@ import Foundation
 import SwiftUI
 
 struct HomeView: View {
+    @State private var navigateToProfile = false
     var userName: String
     
     var body: some View {
-        VStack {
-            Spacer()
-            
-            Image(systemName: "house")
-                .resizable()
-                .aspectRatio(contentMode: .fit)
-                .frame(width: 200, height: 200)
-            
-            Spacer()
-            
-            Text(userName)
-                .font(.largeTitle)
-                .padding()
+        NavigationStack {
+            ZStack {
+                
+                VStack {
+                    Spacer()
+                    
+                    Image("logo") // Ensure this image is in your assets with this name
+                        .resizable()
+                        .aspectRatio(contentMode: .fit)
+                        .frame(width: 550, height: 550)
+                    
+                    Spacer()
+                        .frame(height: 125)
+                }
+                
+                NavigationLink(destination: UserProfileView(), isActive: $navigateToProfile) {
+                    EmptyView()
+                }
+            }
+            .onAppear {
+                DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
+                    navigateToProfile = true
+                }
+            }
         }
-        .navigationTitle("Home")
+        .navigationBarBackButtonHidden(true)
     }
 }
 

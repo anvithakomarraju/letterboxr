@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5B902F822C68F93C00315D5B /* lbx.db in Resources */ = {isa = PBXBuildFile; fileRef = 5B902F812C68ED5E00315D5B /* lbx.db */; };
 		5BCC5AE42C5F02CD000C7F46 /* LBXApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BCC5AE32C5F02CD000C7F46 /* LBXApp.swift */; };
 		5BCC5AE62C5F02CD000C7F46 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BCC5AE52C5F02CD000C7F46 /* ContentView.swift */; };
 		5BCC5AEA2C5F02CE000C7F46 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5BCC5AE92C5F02CE000C7F46 /* Assets.xcassets */; };
@@ -22,6 +23,8 @@
 		5BCC5B1A2C5F0409000C7F46 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BCC5B192C5F0409000C7F46 /* SignUpView.swift */; };
 		5BCC5B1C2C5F0421000C7F46 /* UserProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BCC5B1B2C5F0421000C7F46 /* UserProfileView.swift */; };
 		5BCC5B1E2C5F0446000C7F46 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BCC5B1D2C5F0446000C7F46 /* HomeView.swift */; };
+		5BCC5B202C62BCFF000C7F46 /* HTMLTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BCC5B1F2C62BCFF000C7F46 /* HTMLTextView.swift */; };
+		5BCC5B222C62C336000C7F46 /* LetterboxesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BCC5B212C62C336000C7F46 /* LetterboxesView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +45,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5B902F812C68ED5E00315D5B /* lbx.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = lbx.db; sourceTree = "<group>"; };
 		5BCC5AE02C5F02CD000C7F46 /* LBX.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LBX.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5BCC5AE32C5F02CD000C7F46 /* LBXApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LBXApp.swift; sourceTree = "<group>"; };
 		5BCC5AE52C5F02CD000C7F46 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -60,6 +64,8 @@
 		5BCC5B192C5F0409000C7F46 /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
 		5BCC5B1B2C5F0421000C7F46 /* UserProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileView.swift; sourceTree = "<group>"; };
 		5BCC5B1D2C5F0446000C7F46 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		5BCC5B1F2C62BCFF000C7F46 /* HTMLTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTMLTextView.swift; sourceTree = "<group>"; };
+		5BCC5B212C62C336000C7F46 /* LetterboxesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LetterboxesView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,7 +118,9 @@
 			children = (
 				5BCC5AE32C5F02CD000C7F46 /* LBXApp.swift */,
 				5BCC5AE52C5F02CD000C7F46 /* ContentView.swift */,
+				5BCC5B1F2C62BCFF000C7F46 /* HTMLTextView.swift */,
 				5BCC5AE92C5F02CE000C7F46 /* Assets.xcassets */,
+				5B902F812C68ED5E00315D5B /* lbx.db */,
 				5BCC5AEB2C5F02CE000C7F46 /* Preview Content */,
 				5BCC5B0F2C5F02F4000C7F46 /* ChangePasswordView.swift */,
 				5BCC5B112C5F0336000C7F46 /* LetterboxListView.swift */,
@@ -122,6 +130,7 @@
 				5BCC5B192C5F0409000C7F46 /* SignUpView.swift */,
 				5BCC5B1B2C5F0421000C7F46 /* UserProfileView.swift */,
 				5BCC5B1D2C5F0446000C7F46 /* HomeView.swift */,
+				5BCC5B212C62C336000C7F46 /* LetterboxesView.swift */,
 			);
 			path = LBX;
 			sourceTree = "<group>";
@@ -255,6 +264,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5B902F822C68F93C00315D5B /* lbx.db in Resources */,
 				5BCC5AED2C5F02CE000C7F46 /* Preview Assets.xcassets in Resources */,
 				5BCC5AEA2C5F02CE000C7F46 /* Assets.xcassets in Resources */,
 			);
@@ -282,8 +292,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				5BCC5B122C5F0336000C7F46 /* LetterboxListView.swift in Sources */,
+				5BCC5B222C62C336000C7F46 /* LetterboxesView.swift in Sources */,
 				5BCC5B162C5F03D3000C7F46 /* PlaceholderStyle.swift in Sources */,
 				5BCC5B142C5F03AE000C7F46 /* MapView.swift in Sources */,
+				5BCC5B202C62BCFF000C7F46 /* HTMLTextView.swift in Sources */,
 				5BCC5AE62C5F02CD000C7F46 /* ContentView.swift in Sources */,
 				5BCC5B1E2C5F0446000C7F46 /* HomeView.swift in Sources */,
 				5BCC5B1C2C5F0421000C7F46 /* UserProfileView.swift in Sources */,
